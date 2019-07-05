@@ -13,8 +13,8 @@ export class EmpresasService {
     return this.afs.collection("empresas").snapshotChanges().pipe(map(actions => actions.map(documentEmpresa => {
       const empresa = documentEmpresa.payload.doc.data() as empresa;
       empresa.id = documentEmpresa.payload.doc.id;
-      this.afs.doc(empresa.pasajero.path).snapshotChanges().subscribe(s => console.log(s.payload.data()))
-      empresa.pasajero.get().then(s => console.log(s.data()))
+      //this.afs.doc(empresa.pasajero.path).snapshotChanges().subscribe(s => console.log(s.payload.data()))
+      //empresa.pasajero.get().then(s => console.log(s.data()))
       return empresa
     })));
   }

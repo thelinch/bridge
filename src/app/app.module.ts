@@ -8,16 +8,16 @@ import { environment } from 'src/environments/environment';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app.routing.module';
 import { EmpresasService } from './global/services/empresas.service';
-
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AngularFirestoreModule,
+  
     AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule
   ],

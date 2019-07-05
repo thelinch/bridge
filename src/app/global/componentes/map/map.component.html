@@ -1,0 +1,5 @@
+<agm-map [panControl]="true" [zoom]=11 [disableDefaultUI]="true" [mapTypeId]="'roadmap'" [mapTypeControl]="true"
+    [latitude]="lat" [longitude]="lng">
+    <agm-marker *ngIf="longitudActualPasajero!=0 && latitudActualPasajero!=0" [latitude]="latitudActualPasajero"
+        [longitude]="longitudActualPasajero"></agm-marker>
+</agm-map>
