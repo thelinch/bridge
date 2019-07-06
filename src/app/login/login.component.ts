@@ -9,11 +9,11 @@ import { empresa } from '../global/modelos/empresa';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  listaEmpresas: Observable<empresa[]>
+  
   constructor(private empresaService: EmpresasService) { }
 
   ngOnInit() {
-    this.listaEmpresas = this.empresaService.listarEmpresas()
+    
   }
 
 }

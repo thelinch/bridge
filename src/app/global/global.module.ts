@@ -50,16 +50,23 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MapComponent } from './componentes/map/map.component';
 import { AgmCoreModule } from '@agm/core';
 import { CommonModule } from '@angular/common';
+import { ViajeComponent } from './componentes/viaje/viaje.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /**
  * NgModule that includes all Material modules.
 */
 @NgModule({
-    declarations: [MapComponent],
+    declarations: [MapComponent, ViajeComponent],
     imports: [
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyDjUlVzErtcnc8NA2PY4SyxDOcZf3az6DY'
         }),
-        CommonModule
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+
     ],
     exports: [
         // CDK
@@ -111,7 +118,7 @@ import { CommonModule } from '@angular/common';
         MatTooltipModule,
         MatTreeModule,
         MapComponent,
-
+        ViajeComponent
     ]
 })
 export class GlobalModule { }

@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-content padding-1 ">
+        <form [formGroup]="formularioViaje" action="" class="row valign-wrapper ">
+            <div class="col s10">
+                <div class="row ">
+                    <mat-form-field class="col s12">
+                        <input matInput placeholder="Ingrese tu lugar destino..." formControlName="destino">
+                        <i class="material-icons red-text  accent-4" matPrefix>add_location</i>
+                    </mat-form-field>
+                    <mat-form-field class="col s12">
+                        <input matInput placeholder="Agrege tu ubicacion actual" formControlName="actual">
+                        <i class=" material-icons blue-text" matPrefix>
+                            gps_fixed
+                        </i>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="col s2 right-align ">
+                <a [ngClass]="{disabled:!formularioViaje.valid}">
+                    <i class="material-icons md-48 teal white-text padding-5 z-depth-2  circle cursor">local_taxi</i>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

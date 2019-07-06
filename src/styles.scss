@@ -65,11 +65,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     display: block;
     margin-top: 6px;
   }
-  
+  .cursor{
+    cursor:pointer;
+  }
   .single.contact-info {
     background: none;
     border: none;
   }
+
   
   .single.contact-info li {
     margin-top: 0px;
@@ -3478,7 +3481,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .position-absolute {
     position: absolute;
   }
-  
+  .position-relative{
+    position:relative;
+  }
   /* Vertical Align */
   .vertical-align-center {
     position: absolute;
@@ -6199,7 +6204,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .collection .collection-item.avatar:not(.circle-clipper) > .circle {
     background: #e6e6e6;
   }
-  
+  .padding-large{
+  padding:2rem;
+  }
   /*@font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -7667,3 +7674,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: rgba(0, 0, 0, 0.87);
     font-weight: 400;
   }
+  app-viaje{
+    position: absolute;
+    top:0;
+    right:  0;
+    width: 100%;
+}

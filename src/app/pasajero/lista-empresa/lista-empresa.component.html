@@ -1,1 +1,3 @@
-<p>lista-empresa works!</p>
+<div *ngFor="let empresa of listaEmpresas | async">
+    {{empresa.ruc}}
+</div>
