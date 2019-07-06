@@ -59,7 +59,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     declarations: [MapComponent, ViajeComponent],
     imports: [
         AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyDjUlVzErtcnc8NA2PY4SyxDOcZf3az6DY'
+            apiKey: 'AIzaSyDQx_Xi6ZTno7iTF7E3nytfDtb8zrcifBs',
+            libraries: ["places"]
         }),
         CommonModule,
         FormsModule,
