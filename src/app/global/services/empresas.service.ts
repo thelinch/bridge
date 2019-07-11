@@ -10,6 +10,7 @@ export class EmpresasService {
   private coleccoionEmpresas: AngularFirestoreCollection<empresa>
   constructor(private afs: AngularFirestore) { }
   listarEmpresas(): Observable<empresa[]> {
+    
     return this.afs.collection("empresas").snapshotChanges().pipe(map(actions => actions.map(documentEmpresa => {
       const empresa = documentEmpresa.payload.doc.data() as empresa;
       empresa.id = documentEmpresa.payload.doc.id;
